@@ -1,1 +1,0 @@
-# Postman-Collection-for-VMware-Fusion-API-1.0

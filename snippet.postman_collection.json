@@ -1,0 +1,941 @@
+{
+	"info": {
+		"name": "VMware Fusion API 1.0",
+		"_postman_id": "5bb61bf7-ccc8-455c-9ab1-f17f98bfaf6e",
+		"description": "Fusion REST API Explorer imported from: http://127.0.0.1:8697/json/swagger.json -- then modified for use in Postman. Add the following variables to your Environment with appropriate values: \n{{fusionBaseUrl}} should be like: http://127.0.0.18697\n{{Auth}} should be like: Basic YWRtaW5pc3RyYXRvcjpWTXdhcmUxIQ==",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "vms",
+			"description": "Folder for vms",
+			"item": [
+				{
+					"name": "Returns all VMs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Clones a new VM",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Returns information of the VM",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms/:id",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Updates the a VM with the new settings",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms/:id",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Deletes a VM",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms/:id",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Returns power state of the VM",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms/:id/power",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms",
+								":id",
+								"power"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Changes VM power state",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms/:id/power",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms",
+								":id",
+								"power"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Returns all shared folders mounted in the VM",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms/:id/sharedfolders",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms",
+								":id",
+								"sharedfolders"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Mounts a new shared folder in the VM",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms/:id/sharedfolders",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms",
+								":id",
+								"sharedfolders"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a shared folder mounted in the VM",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms/:id/sharedfolders/:folder id",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms",
+								":id",
+								"sharedfolders",
+								":folder id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								},
+								{
+									"key": "folder id",
+									"value": "{{folder id}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a VM shared folder",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms/:id/sharedfolders/:folder id",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms",
+								":id",
+								"sharedfolders",
+								":folder id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								},
+								{
+									"key": "folder id",
+									"value": "{{folder id}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Returns all network adapters in the VM",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms/:id/nic",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms",
+								":id",
+								"nic"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a network adapter in the VM",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms/:id/nic",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms",
+								":id",
+								"nic"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a VM network adapter",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms/:id/nic/:index",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms",
+								":id",
+								"nic",
+								":index"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								},
+								{
+									"key": "index",
+									"value": "{{index}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Deletes a VM network adapter",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms/:id/nic/:index",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms",
+								":id",
+								"nic",
+								":index"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								},
+								{
+									"key": "index",
+									"value": "{{index}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Returns IP address of VM",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vms/:id/ip",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vms",
+								":id",
+								"ip"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "vmnet",
+			"description": "Folder for vmnet",
+			"item": [
+				{
+					"name": "Returns all virtual networks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vmnet",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vmnet"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Returns all port forwardings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vmnet/:vmnet/portforward",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vmnet",
+								":vmnet",
+								"portforward"
+							],
+							"variable": [
+								{
+									"key": "vmnet",
+									"value": "{{vmnet}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Updates the port forwarding",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vmnet/:vmnet/portforward/:protocol/:port",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vmnet",
+								":vmnet",
+								"portforward",
+								":protocol",
+								":port"
+							],
+							"variable": [
+								{
+									"key": "vmnet",
+									"value": "{{vmnet}}"
+								},
+								{
+									"key": "protocol",
+									"value": "{{protocol}}"
+								},
+								{
+									"key": "port",
+									"value": "{{port}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the port forwarding",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+                                "key": "Accept",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/vnd.vmware.vmw.rest-v1+json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "{{Auth}}"
+                            }
+						],
+						"body": {},
+						"url": {
+							"raw": "{{fusionBaseUrl}}api/vmnet/:vmnet/portforward/:protocol/:port",
+							"host": [
+								"{{fusionBaseUrl}}"
+							],
+							"port": "",
+							"path": [
+								"",
+								"api",
+								"vmnet",
+								":vmnet",
+								"portforward",
+								":protocol",
+								":port"
+							],
+							"variable": [
+								{
+									"key": "vmnet",
+									"value": "{{vmnet}}"
+								},
+								{
+									"key": "protocol",
+									"value": "{{protocol}}"
+								},
+								{
+									"key": "port",
+									"value": "{{port}}"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7e60bd61-300a-4c36-8d64-22e31dada9fc",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "32d35dee-2f79-445d-b5bb-2e05818e1f55",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
